@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="The Society of Amateur Caregivers — a free support community and step-by-step SOP library for people caring for seniors, hospice patients, the bedridden, and the terminally ill in the USA. Bed bathing, repositioning, feeding, transfers, hospice comfort care, and more." />
+    <link rel="icon" href="data:," />
+    <title>Step-by-Step Caregiver SOP Library &amp; Support — Society of Amateur Caregivers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav aria-label="Site">
+      <div class="wrap nav-in">
+        <a class="brand" href="#top"><span class="brand-over">Society of</span><span class="brand-name">Amateur Caregivers</span></a>
+        <a class="navlink" href="#sops">SOP Library</a>
+        <a class="navlink" href="#binder">Printed Binder</a>
+        <a class="navlink" href="#who">Community</a>
+        <a class="navlink" href="#about">About Us</a>
+        <a class="navlink" href="#support">Support Line</a>
+        <a class="navlink nav-join" href="#join">Join Free</a>
+      </div>
+    </nav>
+
+    <main id="top">
+      <!-- HERO — the caregiver's problem, and the SOP that answers it -->
+      <header class="hero">
+        <div class="wrap hero-grid">
+          <div>
+            <h1>It is 2 a.m. Your loved one needs care — <em>and nobody ever taught you how.</em></h1>
+            <p class="lede">
+              That is the moment this Society exists for. Start with a step-by-step procedure
+              written by caregivers who have done the work — changing, bathing, turning,
+              feeding, transferring — then find the community of ordinary people doing the
+              same work, and join us free when you are ready.
+            </p>
+            <div class="hero-cta">
+              <a class="btn btn-solid" href="#sops">Open the SOP Library</a>
+              <a class="btn btn-ghost" href="#sop-viewer" id="hero-flagship">Start with Changing &amp; Freshening</a>
+            </div>
+            <p class="hero-note">
+              Ten bedside procedures, free to read and print. Membership is
+              <strong>free for everyone</strong> — no payment, no conditions.
+            </p>
+          </div>
+          <figure class="hero-photo" style="margin:0">
+            
+            <figcaption>Amateur means “one who does it for love.” That is exactly who we are.</figcaption>
+          </figure>
+        </div>
+      </header>
+
+      <!-- ============ 1 · SOP LIBRARY ============ -->
+      <section id="sops" style="padding-top:20px">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>The SOP Library — step by step, at the bedside</h2>
+            <p>
+              Each procedure is a plain-language checklist in the same format: gather your
+              supplies, set up, work through the steps in order, and check each one off as
+              you go — one thumb, one hand free, on your phone. Pick a procedure below and
+              it opens in the checklist viewer.
+            </p>
+          </div>
+
+          <div class="notice" role="note">
+            <strong>Before you begin — please read</strong>
+            <p>
+              Every SOP here is <strong>general caregiving information, not medical
+              advice</strong>. Follow the instructions of the hospice nurse and medical team
+              caring for your person — their guidance for that individual always comes
+              first. If anything causes pain, or you see new bleeding, broken skin, or
+              anything that worries you, stop and call the care team.
+            </p>
+            <p>
+              One procedure you will <em>not</em> find here: anything for swallowing
+              difficulties. If the person in your care coughs, chokes, or struggles to
+              swallow, do not improvise — ask the care team to guide you in person.
+            </p>
+          </div>
+
+          <div class="library-grid" id="library-grid"><!-- cards rendered by script --></div>
+
+          <div class="viewer" id="sop-viewer">
+            <div class="viewer-head">
+              <h3 id="viewer-title">Changing &amp; Freshening a Person in Bed</h3>
+              <p id="viewer-intro"></p>
+              <div class="field">
+                <label for="sop-select">Choose a procedure</label>
+                <select id="sop-select"><!-- options rendered by script --></select>
+              </div>
+            </div>
+
+            <div class="sop-tools">
+              <div class="row">
+                <div class="progress-wrap">
+                  <div class="progress-label" id="progress-label">0 steps complete</div>
+                  <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+                </div>
+                <button class="tool-btn" type="button" id="reset-sop">Start over</button>
+                <button class="tool-btn" type="button" id="download-sop">Download (text)</button>
+                <button class="tool-btn" type="button" id="copy-sop">Copy checklist</button>
+                <span class="copied" id="sop-copied" role="status"></span>
+                <span class="hint">Check marks live only while this page is open — they are a bedside guide for this one round of care, not a record.</span>
+              </div>
+            </div>
+
+            <div class="sop-grid" id="sop-grid"><!-- steps rendered by script --></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRINTED SOP BINDER ============ -->
+      <section id="binder" style="padding-top:8px">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>The Printed SOP Binder — all ten procedures, on paper</h2>
+            <p>
+              A screen is hard to use with gloves on and a person to hold. The whole
+              library also lives on paper: one binder, all ten step-by-step checklists,
+              in order, with a box to tick beside every step. Print the set yourself
+              below — or ask us to mail you a printed binder, free.
+            </p>
+          </div>
+          <div class="binder-grid">
+            <div class="binder-card">
+              <h3>Print your own binder</h3>
+              <p>
+                One button prints all ten SOP checklists together as a binder-ready
+                set — a cover and contents page first, then each procedure starting on
+                its own page, in library order. Print it double-sided if your printer
+                allows, punch it, and it is ready for a three-ring binder or folder at
+                the bedside.
+              </p>
+              <button class="btn btn-solid" type="button" id="print-binder" style="width:100%">Print all 10 SOPs — the full binder</button>
+              <p style="margin-top:14px;font-size:15.5px">
+                The same ten procedures as the library above, in the same words —
+                nothing is added and nothing is left out.
+              </p>
+            </div>
+
+            <div class="binder-card">
+              <h3>Ask us to mail you a printed binder</h3>
+              <p>
+                No printer, or no time? <strong>A printed binder can be mailed to you
+                on request — free.</strong> Fill in the form below and click
+                <strong>Send my binder request</strong> — your request is sent directly
+                to the Society when you click send. We read every request, print
+                binders in batches, and mail them to the address you give.
+                <strong>Please allow up to two weeks for printing and postage</strong>
+                for your binder to arrive.
+              </p>
+              <p>
+                Printing and postage cost money, and donations are what cover them —
+                that is what donations to the Society are used for: printing SOP
+                binders and mailing them out to people who need them. A donation is
+                always <strong>optional and never required</strong>. Ask for the
+                binder either way, and it will come.
+              </p>
+              <form id="binder-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="30203018-9e4e-4ffa-ba20-0465ee1a2c4c" />
+                <input type="hidden" name="subject" value="New Printed Binder Request — Society of Amateur Caregivers" />
+                <input type="hidden" name="from_name" value="Society of Amateur Caregivers — Binder Request Form" />
+                <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <input type="hidden" id="binder-sops-field" name="SOPs Wanted" value="" />
+                <input type="hidden" id="binder-address-field" name="Mailing Address" value="" />
+                <div class="field">
+                  <label for="binder-name">Your name</label>
+                  <input type="text" id="binder-name" name="Name" autocomplete="name" placeholder="e.g., Jordan Alvarez" required />
+                </div>
+                <div class="field">
+                  <label for="binder-street">Mailing address — street</label>
+                  <input type="text" id="binder-street" name="Street Address" autocomplete="street-address" placeholder="Street address, apartment or unit if any" required />
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="binder-city">City</label>
+                    <input type="text" id="binder-city" name="City" autocomplete="address-level2" required />
+                  </div>
+                  <div class="field">
+                    <label for="binder-state">State</label>
+                    <input type="text" id="binder-state" name="State" autocomplete="address-level1" required />
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="binder-zip">ZIP code</label>
+                  <input type="text" id="binder-zip" name="ZIP Code" autocomplete="postal-code" inputmode="numeric" required />
+                </div>
+                <div class="field">
+                  <label>Which SOPs should the binder include?</label>
+                  <label class="binder-all" for="binder-all">
+                    <input type="checkbox" id="binder-all" checked />
+                    <span>The complete binder — all 10 SOPs</span>
+                  </label>
+                  <ul class="binder-sop-list off" id="binder-sop-list"><!-- options rendered by script --></ul>
+                  <p style="font-size:15px;margin:8px 0 0">Untick “the complete binder” to choose individual procedures instead.</p>
+                </div>
+                <div class="field">
+                  <label for="binder-notes">Notes <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label>
+                  <textarea id="binder-notes" name="Notes" placeholder="Anything we should know — large print, a deadline, who the binder is for."></textarea>
+                </div>
+                <p class="binder-error" id="binder-error" role="alert">Please choose the complete binder, or tick at least one procedure.</p>
+                <button class="btn btn-solid" type="submit" id="binder-submit" style="width:100%">Send my binder request</button>
+                <p class="form-status" id="binder-status" role="status" aria-live="polite" style="font-size:15.5px;color:var(--ink-soft);margin:12px 0 0"></p>
+                <p style="font-size:15px;color:var(--ink-soft);margin:10px 0 0">
+                  Clicking send sends this request to the Society. No account is needed,
+                  and the binder is free — a donation toward printing and postage is
+                  always optional and never required.
+                </p>
+              </form>
+              <div class="binder-out" id="binder-out" aria-live="polite">
+                <div class="request-sheet">
+                  <div class="rs-org">Society of Amateur Caregivers</div>
+                  <div class="rs-title">✓ Your binder request has been sent</div>
+                  <p><strong>Thank you — we have your request.</strong> Please allow up to two weeks for printing and postage for your binder to arrive at the address below.</p>
+                  <p><strong>Name:</strong> <span id="br-name"></span></p>
+                  <p><strong>Mailing address:</strong><br /><span id="br-address"></span></p>
+                  <p><strong>Binder requested:</strong></p>
+                  <ul id="br-sops"></ul>
+                  <p id="br-notes-wrap" style="display:none"><strong>Your notes:</strong> <span id="br-notes"></span></p>
+                  <p>
+                    A printed binder is mailed free on request. A donation toward
+                    printing and postage is optional and never required.
+                  </p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-ghost btn-small" type="button" id="print-binder-request">Print this confirmation</button>
+                  <button class="btn btn-ghost btn-small" type="button" id="download-binder">Download as text</button>
+                  <button class="btn btn-ghost btn-small" type="button" id="copy-binder">Copy request text</button>
+                  <span class="copied" id="binder-copied" role="status"></span>
+                </div>
+                <p style="font-size:15px;color:var(--ink-soft);margin:12px 0 0">
+                  This confirmation is for your own records. Your request has already
+                  been sent — you do not need to print it or send it anywhere else.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 2 · COMMUNITY ============ -->
+      <section id="who" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Who we help — the community</h2>
+            <p>
+              Professional care runs on schedules. The hours in between — the nights, the
+              changes, the sitting-with — are carried by amateurs. This society exists for them,
+              and for the people in their care.
+            </p>
+          </div>
+          <div class="help-list">
+            <article class="help-item">
+              
+              <div class="txt">
+                <h3>Seniors with no one left</h3>
+                <p>
+                  Elders whose spouse, family, and friends have all passed, and whose only
+                  remaining circle is the people who choose to show up — lodge brothers,
+                  church members, neighbors, old friends. Nobody should reach ninety with
+                  an empty room.
+                </p>
+              </div>
+            </article>
+            <article class="help-item">
+              
+              <div class="txt">
+                <h3>Hospice, bedridden &amp; terminally ill</h3>
+                <p>
+                  People in home hospice and people confined to bed need steady, gentle,
+                  unhurried hands-on help many times a day — changing, freshening, turning,
+                  repositioning — done with dignity, every single time.
+                </p>
+              </div>
+            </article>
+            <article class="help-item">
+              <div class="noimg">
+                <h3>The caregivers themselves</h3>
+              </div>
+              <div class="txt">
+                <p>
+                  Most amateur caregivers were never taught any of this. They are learning at
+                  2 a.m., at a bedside, alone. We share step-by-step procedures written by
+                  caregivers who have done the work, plus the fellowship of people who
+                  understand what the work costs and what it gives.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROMISE -->
+      <section id="promise">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>What an amateur caregiver is — and is not</h2>
+            <p>
+              We work <strong>alongside</strong> the medical and hospice team, never instead of
+              them. The boundary below is the heart of this society, and every member agrees
+              to it.
+            </p>
+          </div>
+          <div class="promise-grid">
+            <div class="promise do">
+              <h3>We do</h3>
+              <ul>
+                <li>Keep the person clean, dry, comfortable, and treated with dignity</li>
+                <li>Provide presence and companionship — sitting with, listening, being there</li>
+                <li>Follow clear, written, step-by-step procedures (SOPs) for everyday care tasks</li>
+                <li>Give family caregivers respite so they can rest</li>
+                <li>Watch, notice changes, and report them promptly to the hospice or medical team</li>
+                <li>Communicate with the person throughout every task, at their pace</li>
+              </ul>
+            </div>
+            <div class="promise never">
+              <h3>We never</h3>
+              <ul>
+                <li>Make medical decisions or change a care plan</li>
+                <li>Give, adjust, or advise on medication</li>
+                <li>Perform nursing or clinical procedures</li>
+                <li>Handle the person’s money, accounts, or legal documents</li>
+                <li>Replace the hospice nurse, doctor, or any member of the care team</li>
+                <li>Continue a task that causes pain or distress — we stop and call the care team</li>
+              </ul>
+              <p class="foot">
+                Everything on this site is general caregiving information, shared from
+                experience. It is not medical advice. The hospice or medical team caring for
+                your person always has the final word.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT US -->
+      <section id="about" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>About Us</h2>
+            <p>
+              A fellowship of family and volunteer caregivers — for seniors who have no
+              one else left, and for the ordinary people who show up for them anyway.
+            </p>
+          </div>
+          <div class="founder">
+            
+            <div>
+              <blockquote>
+                His father is the third senior he has cared for in volunteer status. The other
+                two were Freemason men in their nineties who had no one else — everyone else
+                had passed — and only their fraternity brothers were left to help out and
+                watch over them.
+              </blockquote>
+              <p>
+                The Society of Amateur Caregivers is the work of Phillipp
+                Dismukes, a caregiver in exactly that position: caring for his father in
+                home hospice, and remembering the two men before him. The Society exists
+                so that the next person sitting at a bedside for the first time does not
+                have to figure it all out alone — and so that no senior’s last chapter is
+                spent with nobody in the room.
+              </p>
+              <p>
+                We are amateurs in the original sense of the word: people who do this for love,
+                not for pay — like amateur golfers, good at what we do and choosing to stay
+                amateur, not training to become professionals. What we have to offer each
+                other is presence, practical knowledge, and the promise that someone else
+                understands.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUPPORT LINE -->
+      <section id="support">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Support Line — schedule a talk</h2>
+            <p>
+              Sometimes you do not need advice. You need a conversation — a friendly voice,
+              a positive pick-me-up, and someone in your corner saying: <em>you can do this,
+              and you are not doing it alone.</em> That is what our Support Line is for.
+            </p>
+          </div>
+          <div class="support-grid">
+            <div class="support-copy">
+              <h3 style="font-size:22px;margin-bottom:12px">Cheerleading, not counselling</h3>
+              <p>
+                Book a short, friendly talk with a fellow amateur caregiver — a peer, not a
+                professional. We listen, we encourage, and we help you face the next hour,
+                the next change, the next night shift at the bedside.
+              </p>
+              <ul>
+                <li>A friendly conversation when the house feels too quiet</li>
+                <li>Encouragement before a hard day, a hard visit, or a hard task</li>
+                <li>A pep talk when you are tired and doubting yourself</li>
+                <li>Someone who understands caregiving because they do it too</li>
+                <li>A reminder of what you are doing well — because you are</li>
+              </ul>
+              <p>
+                <strong>Please be clear on what this is — and is not.</strong> The Support
+                Line is peer support and encouragement only. It is <strong>not medical
+                advice</strong>, not therapy or counselling, and <strong>not a crisis
+                line</strong>. Our volunteers cannot help with medication, symptoms, or care
+                decisions — for those, talk to the hospice or medical team caring for your
+                person.
+              </p>
+              <div class="crisis-box" role="note">
+                <strong>If you are in crisis, do not wait for a scheduled talk</strong>
+                <p>
+                  If you are thinking about harming yourself, or you feel you cannot keep
+                  yourself safe, please reach out right now:
+                </p>
+                <p class="big988">Call or text 988 in the US</p>
+                <p>
+                  That is the Suicide and Crisis Lifeline — free, confidential, and available
+                  24 hours a day. If someone is in immediate danger, call your local
+                  emergency services.
+                </p>
+              </div>
+            </div>
+
+            <div class="support-form-card">
+              <h3>Request a talk</h3>
+              <p class="sub">
+                Choose a day and a time window that suits you, and tell us what kind of
+                encouragement would help most. When you click
+                <strong>Send my talk request</strong>, your request is sent directly to
+                the Society. <strong>We aim to reply using the contact method you give
+                within one day</strong> to confirm your talk — if you do not hear from
+                us in that time, please send the request again.
+              </p>
+              <form id="talk-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2cc976e1-0624-4ad8-92ef-b039f9fd888f" />
+                <input type="hidden" name="subject" value="New Support Line Talk Request — Society of Amateur Caregivers" />
+                <input type="hidden" name="from_name" value="Society of Amateur Caregivers — Support Line Form" />
+                <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true" />
+                <div class="field">
+                  <label for="talk-name">Your first name</label>
+                  <input type="text" id="talk-name" name="Name" autocomplete="given-name" placeholder="e.g., Jordan" required />
+                </div>
+                <div class="field">
+                  <label for="talk-contact">How should we reach you? <span style="font-weight:400;color:var(--ink-soft)">(email or other contact you choose to share)</span></label>
+                  <input type="text" id="talk-contact" name="Contact Method" placeholder="e.g., your email address or phone number" required />
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="talk-date">Preferred day</label>
+                    <input type="date" id="talk-date" name="Preferred Day" required />
+                  </div>
+                  <div class="field">
+                    <label for="talk-time">Time window</label>
+                    <select id="talk-time" name="Time Window" required>
+                      <option value="Morning">Morning</option>
+                      <option value="Midday">Midday</option>
+                      <option value="Afternoon">Afternoon</option>
+                      <option value="Evening">Evening</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field-row">
+                  <div class="field">
+                    <label for="talk-length">Length</label>
+                    <select id="talk-length" name="Length">
+                      <option value="15 minutes">15 minutes</option>
+                      <option value="30 minutes" selected>30 minutes</option>
+                      <option value="45 minutes">45 minutes</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="talk-topic">What encouragement would help most?</label>
+                    <select id="talk-topic" name="Encouragement Wanted">
+                      <option value="A general pick-me-up">A general pick-me-up</option>
+                      <option value="Encouragement before a hard task">Encouragement before a hard task</option>
+                      <option value="I just need to talk it out">I just need to talk it out</option>
+                      <option value="Feeling tired and worn down">Feeling tired and worn down</option>
+                      <option value="A good-news / we-can-do-it chat">A “we can do it” chat</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="field">
+                  <label for="talk-notes">Anything you want us to know? <span style="font-weight:400;color:var(--ink-soft)">(optional)</span></label>
+                  <textarea id="talk-notes" name="Additional Notes" placeholder="A sentence or two is plenty."></textarea>
+                </div>
+                <button class="btn btn-solid" type="submit" id="talk-submit" style="width:100%">Send my talk request</button>
+                <p class="form-status" id="talk-status" role="status" aria-live="polite" style="font-size:15.5px;color:var(--ink-soft);margin:12px 0 0"></p>
+                <p style="font-size:15px;color:var(--ink-soft);margin:14px 0 0">
+                  Peer support and encouragement only — <strong>not medical advice</strong>
+                  and <strong>not a crisis line</strong>. If you are in crisis in the US,
+                  do not wait for a scheduled talk — call or text <strong>988</strong> now.
+                </p>
+              </form>
+              <div class="talk-out" id="talk-out" aria-live="polite">
+                <div class="talk-card">
+                  <div class="tc-org">Support Line · Talk Request Sent</div>
+                  <div class="tc-title" id="tc-title">Your talk</div>
+                  <p><strong>Your request has been sent.</strong> We aim to reply within one day using the contact method you gave, to confirm your talk.</p>
+                  <p id="tc-when"></p>
+                  <p id="tc-topic"></p>
+                  <p id="tc-contact"></p>
+                  <p id="tc-notes"></p>
+                  <p style="margin-top:10px">We can do it — one conversation, one hour, one day at a time.</p>
+                  <p style="margin-top:8px">This is peer support and encouragement only — not medical advice and not a crisis line. In crisis in the US, call or text <strong>988</strong>.</p>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-ghost btn-small" type="button" id="download-talk">Download a copy for my records</button>
+                  <button class="btn btn-ghost btn-small" type="button" id="copy-talk">Copy request text</button>
+                  <span class="copied" id="talk-copied" role="status"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHARE -->
+      <section id="share" class="band">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Know another caregiver? Pass it on</h2>
+            <p>
+              The note below is meant to be sent to another caregiver — copy it and
+              paste it into a text or email to a daughter, son, neighbor, or friend
+              who is caring for someone. It points them to the free step-by-step SOP
+              checklists here, so they can find them and do not have to figure care
+              out alone.
+            </p>
+          </div>
+          <div class="share-box">
+            <blockquote id="share-text">I found the Society of Amateur Caregivers — free, step-by-step SOP checklists for people caring for someone in bed, covering changing, bathing, repositioning, feeding, and transfers. Joining is free, and the checklists are written in plain language by caregivers. Thought it might help you too.</blockquote>
+            <div class="share-actions">
+              <button class="btn btn-solid btn-small" type="button" id="copy-share">Copy note to send to another caregiver</button>
+              <span class="copied" id="share-copied" role="status"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ 3 · MEMBERSHIP ============ -->
+      <section id="join" class="band-deep">
+        <div class="wrap">
+          <div class="section-head">
+            <h2>Join the Society — free for everyone</h2>
+            <p>
+              Anyone can join, and joining is free. There is no fee, no payment step, and
+              nothing to qualify for — if you care for someone, or you want to stand with
+              the people who do, you belong here. Sign up below, take the pledge, and you
+              are a member, with the same welcome and the same standing as everyone else.
+            </p>
+          </div>
+
+          <div class="pledge">
+            <h3>Sign up free &amp; take the membership pledge</h3>
+            <p class="sub">
+              Enter your name and create your membership card. Keep it, print it, or send
+              it to someone who should join with you. That is all joining takes.
+            </p>
+            <form id="pledge-form">
+              <div class="field">
+                <label for="member-name">Your name</label>
+                <input type="text" id="member-name" name="member-name" autocomplete="name" placeholder="e.g., Jordan Alvarez" required />
+              </div>
+              <button class="btn btn-solid" type="submit" style="width:100%">Join free — create my membership card</button>
+            </form>
+            <div class="card-out" id="card-out" aria-live="polite">
+              <div class="member-card">
+                <div class="mc-org">Society of Amateur Caregivers</div>
+                <div class="mc-name" id="mc-name"></div>
+                <div class="mc-meta" id="mc-meta"></div>
+                <p class="mc-pledge">
+                  “I will show up. I will keep the person in my care clean, comfortable, and
+                  treated with dignity. I will work alongside their medical and hospice team,
+                  and I will pass what I learn on to the next caregiver.”
+                </p>
+              </div>
+              <div class="card-actions">
+                <button class="btn btn-ghost btn-small" type="button" id="download-card">Download card as text</button>
+                <button class="btn btn-ghost btn-small" type="button" id="copy-card">Copy card text</button>
+                <span class="copied" id="card-copied" role="status"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="donate">
+            <h3>Last, and only if you wish: a donation</h3>
+            <p>
+              You are already a member — joining never depends on giving anything.
+              Donations have one stated purpose: they are used to print SOP binders
+              and mail them, free, to caregivers who ask for one — covering the paper,
+              the printing, and the postage of getting the checklists into the hands
+              of people who need them. If you would like to help with that, a voluntary
+              donation of any amount is gratefully received. Many members never donate,
+              and they are members in full standing all the same. Giving is a way to
+              help, never a condition of belonging — and never a condition of
+              receiving a binder.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <nav class="foot-nav" aria-label="Footer">
+          <a href="#sops">SOP Library</a>
+          <a href="#binder">Printed Binder</a>
+          <a href="#who">Community</a>
+          <a href="#about">About Us</a>
+          <a href="#support">Support Line</a>
+          <a href="#join">Join Free</a>
+        </nav>
+        <p>
+          <strong>Society of Amateur Caregivers</strong> — a fellowship of
+          volunteer and family caregivers for seniors, hospice patients, the bedridden, and
+          the terminally ill. The Society is international in scope and open to caregivers
+          everywhere. Membership is free for everyone. Donations are optional,
+          are invited only after joining, and are never a condition of membership.
+        </p>
+        <p>
+          All procedures and information on this page are <strong>general caregiving
+          information, not medical advice</strong>. Amateur caregivers provide companionship
+          and everyday practical care and work <strong>alongside</strong> the medical and
+          hospice team — they do not replace nurses, doctors, or any clinician, and they do
+          not make medical decisions. When in doubt, call the hospice or medical team caring
+          for your person.
+        </p>
+        <p>
+          The Support Line offers peer support and encouragement only — it is not medical
+          advice and it is not a crisis line. If you are in crisis in the US, call or text
+          <strong>988</strong>.
+        </p>
+        <p class="fine">Take your time. Keep them clean and dry. Protect the skin. Talk to them throughout. No one should face the last chapter alone.</p>
+      </div>
+    </footer>
+
+    <!-- print-only: full binder and binder request sheet are built here by script -->
+    <div id="binder-print" aria-hidden="true"></div>
+    <div id="request-print" aria-hidden="true"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
