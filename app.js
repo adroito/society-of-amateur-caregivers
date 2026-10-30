@@ -55,7 +55,7 @@
           id: "changing-and-freshening",
           title: "Changing & Freshening a Person in Bed",
           problem: "For when a brief, pad, and shirt need changing and the person cannot leave the bed — the full bedside change, in order.",
-          intro: "The Society’s flagship procedure, written from long bedside experience: how to change a diaper, Chux pad, and shirt for a person who cannot leave the bed — calmly, cleanly, and without rushing. Work through it in order, checking off each step as you go.",
+          intro: "How to change a diaper, Chux pad, and shirt for a person who cannot leave the bed — calmly, cleanly, and without rushing. Work through it in order, checking off each step as you go.",
           sections: [
             { title: "Prep Box Checklist", items: [
               "Zinc oxide cream (preferred brand)",
